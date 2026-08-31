@@ -7,34 +7,39 @@ title: Player 1 Profile
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
   
   body {
-    background-color: #0d0221;
-    color: #0f0;
+    background-color: #0d0221; /* Dark Purple Background */
+    color: #0f0; /* Neon Green Text */
     font-family: 'Press Start 2P', cursive;
-    line-height: 1.6;
-    padding: 20px;
+    line-height: 1.8;
+    padding: 40px;
     max-width: 900px;
     margin: 0 auto;
   }
   
   h1, h2, h3 {
-    color: #ff00de;
-    text-shadow: 2px 2px #000;
+    color: #ff00de; /* Hot Pink Headers */
+    text-shadow: 3px 3px #000;
     text-transform: uppercase;
+    border-bottom: 4px solid #0f0;
+    padding-bottom: 15px;
+    margin-top: 40px;
   }
   
   .stat-box {
-    border: 4px solid #0f0;
-    padding: 15px;
-    margin-bottom: 20px;
+    border: 4px double #0f0;
+    padding: 25px;
+    margin-bottom: 40px;
     background: #000;
-    box-shadow: 5px 5px #ff00de;
+    box-shadow: 8px 8px #ff00de;
   }
   
   .skill-bar {
     background: #333;
-    height: 20px;
+    height: 25px;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
     position: relative;
   }
   
@@ -42,20 +47,36 @@ title: Player 1 Profile
     background: #0f0;
     height: 100%;
     display: block;
+    box-shadow: inset -2px -2px #000;
   }
   
   a {
-    color: #0ff;
+    color: #0ff; /* Cyan Links */
     text-decoration: none;
-    border-bottom: 2px dashed #0ff;
+    border: 2px solid #0ff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: all 0.2s;
+    font-size: 0.8em;
   }
   
   a:hover {
     background-color: #0ff;
     color: #000;
+    box-shadow: 4px 4px #ff00de;
+    transform: translate(-2px, -2px);
   }
 
-  ul { list-style-type: square; }
+  ul { 
+    list-style-type: square; 
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 15px;
+  }
 </style>
 
 <div class="stat-box">
