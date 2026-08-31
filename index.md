@@ -1,3 +1,4 @@
 ---
-title: Welcome to my blog!
+layout: default
+title: My First GitHub Pages Site
 ---
