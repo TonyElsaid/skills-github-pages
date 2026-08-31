@@ -124,6 +124,6 @@ Methodical engineer specializing in **Python**, **Node.js**, and **Cloud Securit
 
 ## 🕹️ SELECT YOUR LINK
 *   [START GAME: Download CV](/assets/Tony_Alsaid_CV.pdf)
-*   [MULTIPLAYER: LinkedIn](https://www.linkedin.com/in/tony-elsaid/)
+*   [MULTIPLAYER: LinkedIn](https://www.linkedin.com/in/tony-elsaid-81984316a/)
 *   [CODE BASE: GitHub](https://github.com/TonyElsaid)
-*   [CONTACT: Email Me](mailto:your-email@example.com)
+*   [CONTACT: Email Me](mailto:tonyelsaid.te@gmail.com)
