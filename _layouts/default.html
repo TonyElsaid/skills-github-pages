@@ -66,5 +66,59 @@
 </head>
 <body>
     {{ content }}
+    <!-- The Rabbit Container -->
+<div id="pet-rabbit" style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    pointer-events: none; /* Lets clicks pass through */
+    z-index: 9999;
+    transition: transform 0.1s ease-out;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+">
+    <!-- Replace src with your uploaded rabbit.png OR use the emoji below -->
+    <img src="assets/rabbit.png" alt="Pet Rabbit" style="width: 100%; height: 100%; object-fit: contain;">
+    <!-- If using emoji, delete the img tag above and uncomment this: -->
+    <!-- <span style="font-size: 50px;">🐇</span> -->
+</div>
+
+<script>
+const rabbit = document.getElementById('pet-rabbit');
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+let rabbitX = mouseX;
+let rabbitY = mouseY;
+
+// Track mouse movement
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+// Smooth animation loop
+function animateRabbit() {
+    // Calculate distance to mouse
+    const dx = mouseX - rabbitX;
+    const dy = mouseY - rabbitY;
+    
+    // Move rabbit towards mouse with a "lag" factor (0.08 = slow & smooth)
+    rabbitX += dx * 0.08;
+    rabbitY += dy * 0.08;
+    
+    // Flip rabbit based on direction
+    const flip = dx > 0 ? 'scaleX(-1)' : 'scaleX(1)';
+    
+    // Apply position and flip
+    rabbit.style.left = `${rabbitX - 30}px`; // Offset by half width
+    rabbit.style.top = `${rabbitY - 30}px`;  // Offset by half height
+    rabbit.style.transform = flip;
+    
+    requestAnimationFrame(animateRabbit);
+}
+
+animateRabbit();
+</script>
 </body>
 </html>
